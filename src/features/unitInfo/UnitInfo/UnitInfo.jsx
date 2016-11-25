@@ -6,7 +6,6 @@ import {
 } from "semantic-ui-react";
 
 const FACTIONS = [
-  // skip other entries
   {value : "cc", text : "Capellan Confederation"},
   {value : "dc", text : "Draconis Combine"},
   {value : "elh", text : "Eridani Light Horse"},
@@ -24,14 +23,14 @@ const UnitInfo = () => {
       <Form size="large">
         <Form.Field name="name" width={6}>
           <label>Unit Name</label>
-          <input placeholder="Name" value="Black Widow Company" />
+          <input placeholder="Name" defaultValue="Black Widow Company" />
         </Form.Field>
         <Form.Field name="affiliation" width={6}>
           <label>Affiliation</label>
           <Dropdown
             selection
             options={FACTIONS}
-            value="wd"
+            defaultValue="wd"
           />
         </Form.Field>
       </Form>

@@ -83,7 +83,7 @@ const Pilots = () => {
                 <label>Name</label>
                 <input
                   placeholder="Name"
-                  value="Natasha Kerensky"
+                  defaultValue="Natasha Kerensky"
                 />
               </Form.Field>
               <Form.Field name="rank" width={16}>
@@ -92,26 +92,26 @@ const Pilots = () => {
                   fluid
                   selection
                   options={RANKS}
-                  value="Colonel"
+                  defaultValue="Colonel"
                 />
               </Form.Field>
               <Form.Field name="age" width={6}>
                 <label>Age</label>
                 <input
                   placeholder="Age"
-                  value="52"
+                  defaultValue="52"
                 />
               </Form.Field>
               <Form.Field name="gunnery" width={6}>
                 <label>Gunnery</label>
                 <input
-                  value="2"
+                  defaultValue="2"
                 />
               </Form.Field>
               <Form.Field name="piloting" width={6}>
                 <label>Piloting</label>
                 <input
-                  value="3"
+                  defaultValue="3"
                 />
               </Form.Field>
               <Form.Field name="mech" width={16}>
@@ -120,7 +120,7 @@ const Pilots = () => {
                   fluid
                   selection
                   options={MECHS}
-                  value="WHM-6R"
+                  defaultValue="WHM-6R"
                 />
               </Form.Field>
             </Form>
