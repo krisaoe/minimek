@@ -4,7 +4,7 @@ import {Provider} from "react-redux";
 
 import "semantic-ui-css/semantic.css";
 
-import configureStore from "./store/configureStore";
+import configureStore from "store/configureStore";
 const store = configureStore();
 
 // Save a reference to the root element for reuse

@@ -4,7 +4,7 @@ import {
   Container,
 } from "semantic-ui-react";
 
-import TabBarContainer from "./features/tabs/TabBarContainer";
+import TabBarContainer from "features/tabs/TabBarContainer";
 
 import './App.css';
 
