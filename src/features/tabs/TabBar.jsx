@@ -25,7 +25,9 @@ const TabBar = (props) => {
     const {name, component : TabComponent} = tabInfo;
 
     return (
-      <ToggleDisplay show={name === currentTab} key={name}>
+      <ToggleDisplay
+        show={name === currentTab}
+        key={name}>
         <TabComponent />
       </ToggleDisplay>
     )
@@ -33,10 +35,12 @@ const TabBar = (props) => {
 
   return (
     <div>
-      <Menu tabular attached="top" {...otherProps}>
+      <Menu
+        tabular
+        attached="top"
+        {...otherProps}>
         {tabItems}
       </Menu>
-
       {tabPanels}
     </div>
   );
